@@ -1,0 +1,823 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/XRXV3I6Li01BKofINeaB.ttf);
+
+    font-family: MonumentExtended;
+    src: url(../fonts/MonumentExtended-Regular.otf);
+
+
+}
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.loder {
+    background-image: url(../images/a2debfb85547f48c3a699423ba75f321.gif);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+    background-color: white;
+    transition: all ease 0.4s;
+    pointer-events: none;
+}
+
+.curser {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #FF4242;
+    position: fixed;
+    z-index: 10;
+    transition: all ease 0.6s;
+    pointer-events: none;
+
+}
+
+.curser1 {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    z-index: 20;
+    position: fixed;
+    pointer-events: none;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden
+}
+
+.Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/banner.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: 1;
+    background-attachment: fixed;
+
+}
+
+.Home:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000062;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+
+.nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    position: sticky;
+    z-index: 100;
+}
+
+
+.nav-con {
+    max-width: 1800px !important;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+
+
+
+}
+
+.position-fixed {
+    position: relative;
+    width: 1800px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+
+
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.link a {
+    color: white;
+    font-family: "Nunito";
+    font-size: 20px;
+    transition: all ease 0.4s;
+}
+
+.link a:hover,
+.link a.active {
+    color: #FF4242 !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FF4242;
+}
+
+
+
+.logo h3 {
+    color: white;
+    font-family: "Nunito";
+    font-size: 40px;
+    transition: all ease 0.4s;
+}
+
+.logo h3 span {
+    color: #FF4242;
+}
+
+.banner-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+
+.banner-text h1 {
+    color: white;
+    font-family: "MonumentExtended";
+    font-size: 128px;
+    padding-bottom: 40px;
+    line-height: 60px;
+}
+
+
+.banner-text h3 {
+    color: white;
+    font-family: "MonumentExtended";
+    font-size: 32px;
+    padding-bottom: 40px;
+}
+
+
+.About {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    transition: all ease 0.2s;
+
+}
+
+.left video {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+.right {
+    width: 50%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right h2 {
+    color: #000000;
+    font-family: "MonumentExtended";
+    font-size: 64px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.right h2::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    background-color: black;
+    left: -23%;
+    top: 24%;
+
+}
+
+.right p {
+    color: #000000;
+    font-family: "Nunito";
+    width: 54%;
+    padding-bottom: 20px;
+}
+
+.right button {
+    width: 172px;
+    height: 50px;
+    background-color: #FF4242;
+    border: none;
+
+}
+
+.right button a {
+    color: white !important;
+    font-family: "Nunito";
+    font-size: 16px;
+}
+
+.skills {
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-bottom: 100px;
+
+}
+
+.skills-text h2 {
+    color: #000000;
+    font-family: "MonumentExtended";
+    font-size: 64px;
+    padding-top: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.skills-text h2::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    background-color: black;
+    left: 40%;
+    top: 73%;
+}
+
+.skills-box {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.skills-box1 {
+    border: 3px solid black;
+    width: 700px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.skills-box1 h6 {
+    color: #000000;
+    font-family: "Nunito";
+    font-size: 30px;
+
+}
+
+
+.skills-anm {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+
+.skills-anm2 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+
+.skills-anm3 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+
+.skills-anm4 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+
+.skills-anm5 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+
+.skills-anm6 {
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background-color: #FF4242;
+    bottom: 0%;
+    left: 0%;
+    transition: all ease 0.6s;
+}
+
+#absulute {
+    position: absolute;
+}
+
+
+.skills-img {
+    left: 5%;
+    top: 10%;
+}
+
+.skills-img2 {
+    bottom: 5%;
+    left: 1%;
+}
+
+.skills-img3 {
+    top: 0%;
+    right: 15%;
+}
+
+.skills-img4 {
+    bottom: 10%;
+    right: 2%;
+}
+
+.skills-img5 {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 52.7%
+}
+
+.services {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.services-text h2 {
+    color: #000000;
+    font-family: "MonumentExtended";
+    font-size: 64px;
+    padding-bottom: 150px;
+    position: relative;
+    text-align: center;
+}
+
+
+.services-text h2::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    background-color: black;
+    left: 35%;
+    top: 14%;
+}
+
+.service-con {
+    max-width: 1800px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.service-text2 h3 {
+    font-size: 50px;
+    font-family: "MonumentExtended";
+    color: #FF4242;
+    width: 39%;
+
+}
+
+.service-row {
+    margin-top: 100px;
+}
+
+.service-one {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    z-index: 2;
+
+
+}
+
+.service-one h6 {
+    font-size: 24px;
+    font-family: "MonumentExtended";
+    color: #000000;
+    z-index: 2;
+}
+
+.service-one h3 {
+    font-size: 48px;
+    font-family: "MonumentExtended";
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+
+
+}
+
+.service-one img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translatey(-50%);
+}
+
+
+.img1 {
+    transition: all ease 0.4s;
+    z-index: 1;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+.project-text h2 {
+    color: #000000;
+    font-family: "MonumentExtended";
+    font-size: 64px;
+    padding-bottom: 150px;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.project-text h2::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    background-color: black;
+    left: 35%;
+    top: 40%;
+}
+
+.project-text2 {
+    max-width: 1800px !important;
+    margin: 0 auto;
+
+}
+
+.hover a {
+    gap: 20px;
+    animation: inup 0.7s linear infinite alternate;
+}
+
+@keyframes inup {
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+.project-text2 h3 {
+    font-size: 50px;
+    font-family: "MonumentExtended";
+    color: #FF4242;
+}
+
+.hover h5 {
+    color: black;
+    font-size: 24px;
+    font-family: "MonumentExtended";
+}
+
+.hover img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+.project-con {
+    max-width: 1800px !important;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 75px;
+    position: relative;
+}
+
+.project-col {
+    overflow: hidden;
+    width: 100% !important;
+    height: 700px;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.overley {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: all ease 0.4s;
+
+}
+
+.overley:hover {
+    opacity: 1;
+}
+
+.project-col img {
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+/* swiperjs*/
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-curser {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff4242;
+    backdrop-filter: (15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9;
+    opacity: 0;
+    transition: all ease 0.4s;
+    pointer-events: none;
+}
+
+.project-curser h6 {
+    color: white;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.round {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-text h2 {
+    color: #000000;
+    font-family: "MonumentExtended";
+    font-size: 64px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 165px;
+
+}
+
+.contact-text h2::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 8px;
+    left: -19%;
+    top: 12%;
+    background-color: #000000;
+}
+
+.contact-details {
+    gap: 50px;
+}
+
+.contact-box {
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-text2 h2 {
+    font-size: 50px;
+    font-family: "MonumentExtended";
+    color: #FF4242;
+    padding-top: 165px;
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: #F9F9F9;
+}
+
+.footer-box {
+    gap: 200px;
+}
+
+.footer-logo h3 {
+    color: black;
+    font-family: "Nunito";
+    font-size: 40px;
+}
+
+.footer-logo h3 span {
+    color: #FF4242;
+}
+
+.footer-icons {
+    gap: 20px;
+}
+
+.footer-copy h6 {
+    color: black;
+    font-family: "Nunito";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* reponsive */
+
+.menu {
+    display: none;
+    font-size: 20px;
+    color: #FF4242;
+}
+
+.menu-responsive {
+    width: 45%;
+    height: 0%;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #ff424278, #ffffff38);
+    position: fixed;
+    top: 1.5%;
+    right: 1.5%;
+    z-index: 99;
+    backdrop-filter: blur(15px);
+    scale: 0;
+    opacity: 0;
+
+
+
+
+}
+
+.menu-responsive {
+    padding: 30px;
+
+}
+
+.navi-text h6 {
+    font-size: 20px;
+    color: white;
+    font-family: "Nunito";
+}
+
+.navi-icon i {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navi-end {
+    margin-top: 50px;
+}
+
+.navi-end h4 {
+    font-size: 30px;
+    font-family: "MonumentExtended";
+    color: #F9F9F9;
+}
+
+.navi-end h6 {
+    color: white;
+    font-size: 18px;
+    font-family: "Nunito";
+    padding-bottom: 10px;
+    mix-blend-mode: difference
+}
